@@ -22,7 +22,7 @@ namespace EFcore_First
         //配置上下文类
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connString = @"server=PC - 20220531UTCR;database=efcoreDb;MultipleActvieResultSets=true";
+            string connString = @"server=PC-20220531UTCR;database=efcoreDb;trusted_connection=true;MultipleActiveResultSets=true";
             optionsBuilder.UseSqlServer(connString);
         }
 
