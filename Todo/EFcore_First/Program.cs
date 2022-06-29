@@ -28,9 +28,9 @@ app.Run();*/
 //服务器名称：Data Source = (localdb)\MSSQLLocalDB; server=; addr=;
 //数据库名称：database=book;initial catalog=;
 //安全信息：trusted_connection=true; Integrated Security=false;
-//属性：MultipleActvieResultSets=true;
+//属性：MultipleActiveResultSets=true;
 
-string connString = @"server=PC - 20220531UTCR;database=efcoreDb;MultipleActvieResultSets=true";
+string connString = @"server=PC-20220531UTCR;database=efcoreDb;trusted_connection=true;MultipleActiveResultSets=true";
 
 //数据库上下文类（管道）
 //数据库迁移（CodeFirst模式）add-migration（生成迁移代码） init-Mig（迁移名称） update-database（执行到数据库）
